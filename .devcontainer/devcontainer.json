@@ -9,7 +9,7 @@
         }
     ],
     "appPort": [
-        "127.0.0.1:3001:3000"
+        "127.0.0.1:3000:3000"
     ],
     "workspaceFolder": "/workspace",
     "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached",
