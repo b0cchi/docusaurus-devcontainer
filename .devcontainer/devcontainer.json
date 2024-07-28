@@ -1,0 +1,25 @@
+{
+    "name": "docusaurus-template",
+    "image": "node:20.16.0",
+    "mounts": [
+        {
+            "type": "volume",
+            "source": "devcontainer_docusaurus_template_node_modules",
+            "target": "${containerWorkspaceFolder}/node_modules"
+        }
+    ],
+    "appPort": [
+        "127.0.0.1:3001:3000"
+    ],
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "rvest.vs-code-prettier-eslint"
+            ]
+        }
+    }
+}
